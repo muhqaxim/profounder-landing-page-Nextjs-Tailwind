@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="overflow-hidden bg-[#141414] flex flex-col gap-10 font-sans">
+      <main className="overflow-hidden bg-[#141414] flex flex-col md:gap-5 font-sans">
         <Hero />
         <Services />
         <Pricing />

@@ -13,15 +13,15 @@ const Partners = () => {
           <div className="flex animate-scroll gap-4">
             {partner.map((item, index) => (
               <div key={index} className="flex-shrink-0">
-                <div className="relative shadow-lg w-[250px] h-[160px] rounded-lg border border-border flex items-center justify-center">
-                  <Image src={item.image} width={164} height={70}  alt="partner"/>
+                <div className="relative shadow-lg w-[200px] h-[130px] rounded-lg border border-border flex items-center justify-center">
+                  <Image src={item.image} width={120} height={70}  alt="partner"/>
                 </div>
               </div>
             ))}
             {partner.map((item, index) => (
               <div key={index + partner.length} className="-0">
-                <div className="relative shadow-lg w-[250px] h-[160px] rounded-lg border border-border flex items-center justify-center">
-                <Image src={item.image} width={164} height={70}  alt="partner" />
+                <div className="relative shadow-lg w-[200px] h-[130px] rounded-lg border border-border flex items-center justify-center">
+                <Image src={item.image} width={120} height={70}  alt="partner" />
                 </div>
               </div>
             ))}

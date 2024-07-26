@@ -15,31 +15,35 @@ const Footer = () => {
           reliability gives us an edge in delivering high-quality solutions.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-0 w-full lg-w-3/5">
-        <div className="space-y-6">
-          <h3 className=" text-lg">Quick Links</h3>
-          {footer_QuickLinks.map((item) => (
-            <li
-              key={item.id}
-              className="text-sm lg:text-base list-none space-y-4"
-            >
-              <Link href={item.link}>{item.name}</Link>
-            </li>
-          ))}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-0 w-full lg-w-3/5">
+        <div className="flex flex-col gap-4">
+          <h3 className="text-base md:text-lg">Quick Links</h3>
+          <div className="space-y-2">
+            {footer_QuickLinks.map((item) => (
+              <li
+                key={item.id}
+                className="text-xs md:text-sm lg:text-base list-none space-y-1"
+              >
+                <Link href={item.link}>{item.name}</Link>
+              </li>
+            ))}
+          </div>
         </div>
-        <div className="space-y-6">
-          <h3 className=" text-lg">Let's Connect</h3>
-          {footer_Contact.map((item) => (
-            <li
-              key={item.id}
-              className="text-sm lg:text-base list-none space-y-4"
-            >
-              {item.name}: <Link href={item.link}>{item.desc}</Link>
-            </li>
-          ))}
+        <div className="flex flex-col gap-4">
+          <h3 className="text-base md:text-lg">Let's Connect</h3>
+          <div className="space-y-2">
+            {footer_Contact.map((item) => (
+              <li
+                key={item.id}
+                className="text-xs md:text-sm lg:text-base list-none "
+              >
+                {item.name}: <Link href={item.link}>{item.desc}</Link>
+              </li>
+            ))}
+          </div>
         </div>
-        <div className="space-y-6">
-          <h3 className=" text-lg">Visit Us</h3>
+        <div className="w-full col-span-2 md:col-span-1 text-center md:text-start items-center justify-center md:items-start md:justify-start  flex flex-col gap-4">
+          <h3 className="text-lg">Visit Us</h3>
           <p className="text-sm lg:text-base">
             Al Barsha Business Center Office 431, Al Barsha 1, Dubai
           </p>
