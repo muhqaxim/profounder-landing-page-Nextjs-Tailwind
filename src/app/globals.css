@@ -18,16 +18,56 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
+  font-family: 'Urbanist', sans-serif;
+  
+}
+
+.gradient-border {
+  position: relative;
+  border: 1px solid #262626;
+  border-radius: 0px 10px 10px 10px;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 20px;
+  width: 1px;
+  background: linear-gradient(to bottom, #004F82, #262626);
+  border-top-left-radius: 0px;
+}
+
+.gradient-border::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 20px;
+  height: 1px;
+  background: linear-gradient(to right, #004F82, #262626);
+  border-top-left-radius: 0px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
 }
