@@ -36,7 +36,7 @@ const Clients = () => {
       </h2>
       <p>
         At Profounder, we have had the privilege of working with a diverse range
-        of clients across various industries. Here are some of the clients we've
+        of clients across various industries. Here are some of the clients we&apos;ve
         had the pleasure of serving
       </p>
       <div className="md:hidden" {...handlers}>

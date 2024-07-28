@@ -1,16 +1,17 @@
-import "./globals.css";
 
+import '@/styles/globals.css';
+import Head from 'next/head';
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
         <title>Profounder</title>
-      </head>
-      <body>{children}</body>
+      </Head>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

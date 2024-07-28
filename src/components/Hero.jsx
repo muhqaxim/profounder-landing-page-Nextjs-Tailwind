@@ -25,15 +25,15 @@ const Hero = () => {
 
   return (
     <div className="w-full h-full pb-5 md:pb-10">
-      <div className="w-full h-full flex flex-col md:flex-row gap-5 md:gap-0 px-5 md:px-0 md:pl-10 lg:pl-28">
+      <div className="w-full h-full flex flex-col-reverse md:flex-row gap-5 md:gap-0 px-5 md:px-0 md:pl-10 lg:pl-28">
         {/* Text Section */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start gap-6 xl:gap-12">
-          <div className=" space-y-6 py-5 md:py-10">
+          <div className="space-y-6 py-5 md:py-10">
             <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
               Dubai Business Setup Made Easy
             </h1>
             <p className="text-sm xl:text-base w-[90%]">
-              Launch Your Dream Company in Dubai with ProFounders' Hassle-Free
+              Launch Your Dream Company in Dubai with ProFounders&apos; Hassle-Free
               Services.
             </p>
           </div>

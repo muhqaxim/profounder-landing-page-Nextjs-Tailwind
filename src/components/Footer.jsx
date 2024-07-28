@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <h3 className="text-base md:text-lg">Let's Connect</h3>
+          <h3 className="text-base md:text-lg">Let&apos;s Connect</h3>
           <div className="space-y-2">
             {footer_Contact.map((item) => (
               <li
